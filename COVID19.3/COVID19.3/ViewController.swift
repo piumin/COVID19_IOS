@@ -10,20 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var vwContainerhome1:UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-         view.backgroundColor = .black    }
+        vwContainerhome1.layer.cornerRadius = 10.0
+        vwContainerhome1.layer.shadowColor = UIColor.gray.cgColor
+        vwContainerhome1.layer.shadowOffset = .zero
+        vwContainerhome1.layer.shadowOpacity = 0.8
+        vwContainerhome1.layer.shadowRadius = 10.0
+        vwContainerhome1.layer.shadowPath = UIBezierPath(rect: vwContainerhome1.bounds).cgPath
+        vwContainerhome1.layer.shouldRasterize = true
+            }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
