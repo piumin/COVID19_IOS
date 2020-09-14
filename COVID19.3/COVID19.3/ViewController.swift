@@ -24,6 +24,9 @@ class ViewController: UIViewController {
         vwContainerhome2.layer.cornerRadius = 8.0
         // Set initial location in NIBM
                _ = CLLocation(latitude: 6.9063951, longitude: 79.8684273)
+        
+        self.navigationItem.leftBarButtonItem = nil
+        self.navigationItem.hidesBackButton = true
             }
     
 
