@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FF50D76A250D01F400EE70C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50D769250D01F400EE70C0 /* ViewController.swift */; };
+		FF55B332251125CC00DE5B6C /* SafeActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55B331251125CC00DE5B6C /* SafeActionViewController.swift */; };
 		FF5DC78E250FD3C100897336 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DC78D250FD3C100897336 /* SignInViewController.swift */; };
 		FF7BA294250FE5ED00CBDE56 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BA293250FE5ED00CBDE56 /* Utilities.swift */; };
 		FF7BA296250FE9CF00CBDE56 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BA295250FE9CF00CBDE56 /* SignUpViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		FF50D769250D01F400EE70C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF55B331251125CC00DE5B6C /* SafeActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeActionViewController.swift; sourceTree = "<group>"; };
 		FF5DC78D250FD3C100897336 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FF7BA293250FE5ED00CBDE56 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FF7BA295250FE9CF00CBDE56 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF55B333251125E800DE5B6C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF50D769250D01F400EE70C0 /* ViewController.swift */,
+				FFEDB691250CE4F900590437 /* FirstViewController.swift */,
+				FFEDB693250CE4F900590437 /* SecondViewController.swift */,
+				FF5DC78D250FD3C100897336 /* SignInViewController.swift */,
+				FF7BA295250FE9CF00CBDE56 /* SignUpViewController.swift */,
+				FF55B331251125CC00DE5B6C /* SafeActionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FF55B3342511261900DE5B6C /* styling */ = {
+			isa = PBXGroup;
+			children = (
+				FF7BA293250FE5ED00CBDE56 /* Utilities.swift */,
+			);
+			path = styling;
+			sourceTree = "<group>";
+		};
 		FFEDB681250CE4F900590437 = {
 			isa = PBXGroup;
 			children = (
@@ -66,14 +89,10 @@
 		FFEDB68C250CE4F900590437 /* COVID19.3 */ = {
 			isa = PBXGroup;
 			children = (
+				FF55B3342511261900DE5B6C /* styling */,
+				FF55B333251125E800DE5B6C /* ViewControllers */,
 				FFEDB68D250CE4F900590437 /* AppDelegate.swift */,
 				FFEDB68F250CE4F900590437 /* SceneDelegate.swift */,
-				FFEDB691250CE4F900590437 /* FirstViewController.swift */,
-				FFEDB693250CE4F900590437 /* SecondViewController.swift */,
-				FF50D769250D01F400EE70C0 /* ViewController.swift */,
-				FF5DC78D250FD3C100897336 /* SignInViewController.swift */,
-				FF7BA295250FE9CF00CBDE56 /* SignUpViewController.swift */,
-				FF7BA293250FE5ED00CBDE56 /* Utilities.swift */,
 				FFEDB695250CE4F900590437 /* Main.storyboard */,
 				FFEDB698250CE50100590437 /* Assets.xcassets */,
 				FFEDB69A250CE50100590437 /* LaunchScreen.storyboard */,
@@ -158,6 +177,7 @@
 				FF7BA296250FE9CF00CBDE56 /* SignUpViewController.swift in Sources */,
 				FF7BA294250FE5ED00CBDE56 /* Utilities.swift in Sources */,
 				FF5DC78E250FD3C100897336 /* SignInViewController.swift in Sources */,
+				FF55B332251125CC00DE5B6C /* SafeActionViewController.swift in Sources */,
 				FFEDB692250CE4F900590437 /* FirstViewController.swift in Sources */,
 				FFEDB68E250CE4F900590437 /* AppDelegate.swift in Sources */,
 				FFEDB690250CE4F900590437 /* SceneDelegate.swift in Sources */,
