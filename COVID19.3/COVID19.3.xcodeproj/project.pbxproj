@@ -11,6 +11,8 @@
 		FF2892052511FCC500EBAD03 /* Survey2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2892042511FCC500EBAD03 /* Survey2ViewController.swift */; };
 		FF289207251202B400EBAD03 /* survey3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF289206251202B400EBAD03 /* survey3ViewController.swift */; };
 		FF2892092512054900EBAD03 /* survey4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2892082512054900EBAD03 /* survey4ViewController.swift */; };
+		FF28920B251228DB00EBAD03 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28920A251228DB00EBAD03 /* SliderView.swift */; };
+		FF28920D2512299900EBAD03 /* SliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF28920C2512299900EBAD03 /* SliderView.xib */; };
 		FF50D76A250D01F400EE70C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50D769250D01F400EE70C0 /* ViewController.swift */; };
 		FF55B332251125CC00DE5B6C /* SafeActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55B331251125CC00DE5B6C /* SafeActionViewController.swift */; };
 		FF5DC78E250FD3C100897336 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DC78D250FD3C100897336 /* SignInViewController.swift */; };
@@ -30,6 +32,8 @@
 		FF2892042511FCC500EBAD03 /* Survey2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey2ViewController.swift; sourceTree = "<group>"; };
 		FF289206251202B400EBAD03 /* survey3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = survey3ViewController.swift; sourceTree = "<group>"; };
 		FF2892082512054900EBAD03 /* survey4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = survey4ViewController.swift; sourceTree = "<group>"; };
+		FF28920A251228DB00EBAD03 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		FF28920C2512299900EBAD03 /* SliderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderView.xib; sourceTree = "<group>"; };
 		FF50D769250D01F400EE70C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF55B331251125CC00DE5B6C /* SafeActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeActionViewController.swift; sourceTree = "<group>"; };
 		FF5DC78D250FD3C100897336 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				FF2892042511FCC500EBAD03 /* Survey2ViewController.swift */,
 				FF289206251202B400EBAD03 /* survey3ViewController.swift */,
 				FF2892082512054900EBAD03 /* survey4ViewController.swift */,
+				FF28920A251228DB00EBAD03 /* SliderView.swift */,
+				FF28920C2512299900EBAD03 /* SliderView.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -172,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFEDB69C250CE50100590437 /* LaunchScreen.storyboard in Resources */,
+				FF28920D2512299900EBAD03 /* SliderView.xib in Resources */,
 				FFEDB699250CE50100590437 /* Assets.xcassets in Resources */,
 				FFEDB697250CE4F900590437 /* Main.storyboard in Resources */,
 			);
@@ -197,6 +204,7 @@
 				FFEDB68E250CE4F900590437 /* AppDelegate.swift in Sources */,
 				FF2892092512054900EBAD03 /* survey4ViewController.swift in Sources */,
 				FFEDB690250CE4F900590437 /* SceneDelegate.swift in Sources */,
+				FF28920B251228DB00EBAD03 /* SliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
