@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF2892032511EFA000EBAD03 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2892022511EFA000EBAD03 /* SurveyViewController.swift */; };
+		FF2892052511FCC500EBAD03 /* Survey2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2892042511FCC500EBAD03 /* Survey2ViewController.swift */; };
+		FF289207251202B400EBAD03 /* survey3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF289206251202B400EBAD03 /* survey3ViewController.swift */; };
+		FF2892092512054900EBAD03 /* survey4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2892082512054900EBAD03 /* survey4ViewController.swift */; };
 		FF50D76A250D01F400EE70C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50D769250D01F400EE70C0 /* ViewController.swift */; };
 		FF55B332251125CC00DE5B6C /* SafeActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55B331251125CC00DE5B6C /* SafeActionViewController.swift */; };
 		FF5DC78E250FD3C100897336 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DC78D250FD3C100897336 /* SignInViewController.swift */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF2892022511EFA000EBAD03 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		FF2892042511FCC500EBAD03 /* Survey2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey2ViewController.swift; sourceTree = "<group>"; };
+		FF289206251202B400EBAD03 /* survey3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = survey3ViewController.swift; sourceTree = "<group>"; };
+		FF2892082512054900EBAD03 /* survey4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = survey4ViewController.swift; sourceTree = "<group>"; };
 		FF50D769250D01F400EE70C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF55B331251125CC00DE5B6C /* SafeActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeActionViewController.swift; sourceTree = "<group>"; };
 		FF5DC78D250FD3C100897336 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +66,10 @@
 				FF5DC78D250FD3C100897336 /* SignInViewController.swift */,
 				FF7BA295250FE9CF00CBDE56 /* SignUpViewController.swift */,
 				FF55B331251125CC00DE5B6C /* SafeActionViewController.swift */,
+				FF2892022511EFA000EBAD03 /* SurveyViewController.swift */,
+				FF2892042511FCC500EBAD03 /* Survey2ViewController.swift */,
+				FF289206251202B400EBAD03 /* survey3ViewController.swift */,
+				FF2892082512054900EBAD03 /* survey4ViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -174,12 +186,16 @@
 			files = (
 				FF50D76A250D01F400EE70C0 /* ViewController.swift in Sources */,
 				FFEDB694250CE4F900590437 /* SecondViewController.swift in Sources */,
+				FF289207251202B400EBAD03 /* survey3ViewController.swift in Sources */,
 				FF7BA296250FE9CF00CBDE56 /* SignUpViewController.swift in Sources */,
 				FF7BA294250FE5ED00CBDE56 /* Utilities.swift in Sources */,
+				FF2892032511EFA000EBAD03 /* SurveyViewController.swift in Sources */,
 				FF5DC78E250FD3C100897336 /* SignInViewController.swift in Sources */,
 				FF55B332251125CC00DE5B6C /* SafeActionViewController.swift in Sources */,
+				FF2892052511FCC500EBAD03 /* Survey2ViewController.swift in Sources */,
 				FFEDB692250CE4F900590437 /* FirstViewController.swift in Sources */,
 				FFEDB68E250CE4F900590437 /* AppDelegate.swift in Sources */,
+				FF2892092512054900EBAD03 /* survey4ViewController.swift in Sources */,
 				FFEDB690250CE4F900590437 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

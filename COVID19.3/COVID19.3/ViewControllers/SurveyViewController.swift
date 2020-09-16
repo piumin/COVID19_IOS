@@ -1,25 +1,25 @@
 //
-//  SafeActionViewController.swift
+//  SurveyViewController.swift
 //  COVID19.3
 //
-//  Created by Wickramasinghe PN on 9/15/20.
+//  Created by Wickramasinghe PN on 9/16/20.
 //  Copyright © 2020 Wickramasinghe PN. All rights reserved.
 //
 
 import UIKit
 
-class SafeActionViewController: UIViewController {
+class SurveyViewController: UIViewController {
+@IBOutlet weak var survey1TextField: UITextField!
 
-    @IBOutlet weak var pageController: UIPageControl!
-    @IBOutlet weak var sliderScrollView: UIScrollView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+                setUpElement()
     }
-    
-
+      func setUpElement(){
+        
+          Utilities.styleTextField(survey1TextField)
+       // Utilities.styleTextField(survey2TextField)
+      }
     /*
     // MARK: - Navigation
 
