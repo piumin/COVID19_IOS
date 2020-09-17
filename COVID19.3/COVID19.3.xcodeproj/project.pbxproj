@@ -11,12 +11,10 @@
 		FF2892052511FCC500EBAD03 /* Survey2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2892042511FCC500EBAD03 /* Survey2ViewController.swift */; };
 		FF289207251202B400EBAD03 /* survey3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF289206251202B400EBAD03 /* survey3ViewController.swift */; };
 		FF2892092512054900EBAD03 /* survey4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2892082512054900EBAD03 /* survey4ViewController.swift */; };
-		FF28920B251228DB00EBAD03 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28920A251228DB00EBAD03 /* SliderView.swift */; };
-		FF28920D2512299900EBAD03 /* SliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF28920C2512299900EBAD03 /* SliderView.xib */; };
 		FF50D76A250D01F400EE70C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50D769250D01F400EE70C0 /* ViewController.swift */; };
-		FF55B332251125CC00DE5B6C /* SafeActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55B331251125CC00DE5B6C /* SafeActionViewController.swift */; };
 		FF5DC78E250FD3C100897336 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DC78D250FD3C100897336 /* SignInViewController.swift */; };
 		FF6AD5E02512F38100BEB682 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6AD5DF2512F38100BEB682 /* ProfileViewController.swift */; };
+		FF6AD5E22513227000BEB682 /* SafeAciton2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6AD5E12513227000BEB682 /* SafeAciton2ViewController.swift */; };
 		FF7BA294250FE5ED00CBDE56 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BA293250FE5ED00CBDE56 /* Utilities.swift */; };
 		FF7BA296250FE9CF00CBDE56 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BA295250FE9CF00CBDE56 /* SignUpViewController.swift */; };
 		FFEDB68E250CE4F900590437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDB68D250CE4F900590437 /* AppDelegate.swift */; };
@@ -33,12 +31,10 @@
 		FF2892042511FCC500EBAD03 /* Survey2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey2ViewController.swift; sourceTree = "<group>"; };
 		FF289206251202B400EBAD03 /* survey3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = survey3ViewController.swift; sourceTree = "<group>"; };
 		FF2892082512054900EBAD03 /* survey4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = survey4ViewController.swift; sourceTree = "<group>"; };
-		FF28920A251228DB00EBAD03 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
-		FF28920C2512299900EBAD03 /* SliderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderView.xib; sourceTree = "<group>"; };
 		FF50D769250D01F400EE70C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FF55B331251125CC00DE5B6C /* SafeActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeActionViewController.swift; sourceTree = "<group>"; };
 		FF5DC78D250FD3C100897336 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FF6AD5DF2512F38100BEB682 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FF6AD5E12513227000BEB682 /* SafeAciton2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAciton2ViewController.swift; sourceTree = "<group>"; };
 		FF7BA293250FE5ED00CBDE56 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FF7BA295250FE9CF00CBDE56 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FFEDB68A250CE4F900590437 /* COVID19.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVID19.3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,14 +67,12 @@
 				FFEDB693250CE4F900590437 /* SecondViewController.swift */,
 				FF5DC78D250FD3C100897336 /* SignInViewController.swift */,
 				FF7BA295250FE9CF00CBDE56 /* SignUpViewController.swift */,
-				FF55B331251125CC00DE5B6C /* SafeActionViewController.swift */,
 				FF2892022511EFA000EBAD03 /* SurveyViewController.swift */,
 				FF2892042511FCC500EBAD03 /* Survey2ViewController.swift */,
 				FF289206251202B400EBAD03 /* survey3ViewController.swift */,
 				FF2892082512054900EBAD03 /* survey4ViewController.swift */,
 				FF6AD5DF2512F38100BEB682 /* ProfileViewController.swift */,
-				FF28920A251228DB00EBAD03 /* SliderView.swift */,
-				FF28920C2512299900EBAD03 /* SliderView.xib */,
+				FF6AD5E12513227000BEB682 /* SafeAciton2ViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -181,7 +175,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFEDB69C250CE50100590437 /* LaunchScreen.storyboard in Resources */,
-				FF28920D2512299900EBAD03 /* SliderView.xib in Resources */,
 				FFEDB699250CE50100590437 /* Assets.xcassets in Resources */,
 				FFEDB697250CE4F900590437 /* Main.storyboard in Resources */,
 			);
@@ -201,14 +194,13 @@
 				FF7BA294250FE5ED00CBDE56 /* Utilities.swift in Sources */,
 				FF2892032511EFA000EBAD03 /* SurveyViewController.swift in Sources */,
 				FF5DC78E250FD3C100897336 /* SignInViewController.swift in Sources */,
-				FF55B332251125CC00DE5B6C /* SafeActionViewController.swift in Sources */,
+				FF6AD5E22513227000BEB682 /* SafeAciton2ViewController.swift in Sources */,
 				FF2892052511FCC500EBAD03 /* Survey2ViewController.swift in Sources */,
 				FFEDB692250CE4F900590437 /* FirstViewController.swift in Sources */,
 				FFEDB68E250CE4F900590437 /* AppDelegate.swift in Sources */,
 				FF2892092512054900EBAD03 /* survey4ViewController.swift in Sources */,
 				FF6AD5E02512F38100BEB682 /* ProfileViewController.swift in Sources */,
 				FFEDB690250CE4F900590437 /* SceneDelegate.swift in Sources */,
-				FF28920B251228DB00EBAD03 /* SliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
