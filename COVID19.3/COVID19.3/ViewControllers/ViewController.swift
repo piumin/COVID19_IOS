@@ -16,7 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var vwContainerhome2:UIView!
     @IBOutlet weak var vwContainerhome3:UIView!
     @IBOutlet weak var vwContainerhome4:UIView!
-     @IBOutlet weak var nibmmapnew: MKMapView!
+    @IBOutlet weak var nibmmapnew: MKMapView!
+    @IBOutlet weak var mapButton: UIButton!
+    
     private let locationManager = CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +29,13 @@ class ViewController: UIViewController {
         
         //self.navigationItem.leftBarButtonItem = nil
         //self.navigationItem.hidesBackButton = true
+        setUpElement()
+        
             }
     
-
+    func setUpElement(){
+       
+        Utilities.mapButton(mapButton)
+        
+    }
 }

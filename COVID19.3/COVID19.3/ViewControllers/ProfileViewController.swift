@@ -1,5 +1,5 @@
 //
-//  Survey2ViewController.swift
+//  ProfileViewController.swift
 //  COVID19.3
 //
 //  Created by Wickramasinghe PN on 9/16/20.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class Survey2ViewController: UIViewController {
-    
-@IBOutlet weak var survey2TextField: UITextField!
+class ProfileViewController: UIViewController {
+
+@IBOutlet weak var cameraImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,11 +18,10 @@ class Survey2ViewController: UIViewController {
         setUpElement()
     }
     
-
     func setUpElement(){
       
-        Utilities.styleTextField(survey2TextField)
-        
+        Utilities.roundImageView(cameraImageView)
+     
     }
 
 }

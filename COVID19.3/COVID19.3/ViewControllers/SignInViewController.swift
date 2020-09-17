@@ -28,7 +28,7 @@ class SignInViewController: UIViewController {
         //Utilities.styleTextField(S_EmailTextField)
         //Utilities.styleTextField(S_PasswordTextField)
         Utilities.styleFilledButton(SigninButton)
-        Utilities.styleFilledButton(NeedAccountButton)
+        Utilities.styleFilledButton(SigninButton)
     }
     
     @IBAction func SigninTapped(_ sender: Any) {
