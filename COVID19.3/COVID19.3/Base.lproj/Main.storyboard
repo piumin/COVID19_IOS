@@ -426,7 +426,7 @@
             <objects>
                 <viewController storyboardIdentifier="UpdateVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hEZ-aa-QWg" userLabel="Update" customClass="FirstViewController" customModule="COVID19_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p2n-hU-dQ6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nkj-ji-ln2">
@@ -446,7 +446,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Update: 1 Day ago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A12-2A-JJk">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A12-2A-JJk">
                                                         <rect key="frame" x="75" y="189" width="220" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="8D3-mf-W4H"/>
@@ -455,7 +455,7 @@
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPn-ni-AGs">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPn-ni-AGs">
                                                         <rect key="frame" x="4" y="134" width="362" height="47"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                                         <nil key="textColor"/>
@@ -473,12 +473,12 @@
                                                             <constraint firstAttribute="width" constant="130" id="HdA-bV-o3i"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0r7-qc-kUU">
-                                                        <rect key="frame" x="46" y="302" width="249" height="21"/>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0r7-qc-kUU">
+                                                        <rect key="frame" x="24" y="302" width="309" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="G04-ob-qTz"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -492,6 +492,7 @@
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                         <connections>
+                                                            <action selector="updateButtontapped:" destination="hEZ-aa-QWg" eventType="touchUpInside" id="oeD-fb-FgY"/>
                                                             <segue destination="mWf-Xv-xMd" kind="show" id="Cec-79-IXe"/>
                                                         </connections>
                                                     </button>
@@ -651,7 +652,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="AgE-DL-vhP"/>
                     <connections>
+                        <outlet property="DateLabel" destination="A12-2A-JJk" id="eLE-aF-TVJ"/>
+                        <outlet property="ErrorLabel" destination="0r7-qc-kUU" id="Hu9-2q-gHa"/>
                         <outlet property="SurveyLabel" destination="OgT-DB-Pvt" id="7Et-Hr-NkD"/>
+                        <outlet property="TempLabel" destination="iPn-ni-AGs" id="XOh-An-zMb"/>
                         <outlet property="UpdateButton" destination="PLa-gG-N9g" id="tml-Un-e7S"/>
                         <outlet property="UpdateUIView" destination="qeL-5B-Tos" id="bKd-BA-EiJ"/>
                         <outlet property="notifyUIView" destination="Cta-TB-p8u" id="N8t-PY-60K"/>
@@ -1104,7 +1108,7 @@
             <objects>
                 <viewController storyboardIdentifier="SigninCV" id="MMH-Df-piH" userLabel="Signin" customClass="SignInViewController" customModule="COVID19_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sBO-Eg-s5P">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Mf-Kr-fwJ">
@@ -2029,7 +2033,7 @@
         <segue reference="8KH-KB-PDh"/>
         <segue reference="W99-jA-di1"/>
         <segue reference="s2Y-Lm-WGB"/>
-        <segue reference="oF3-C6-Otx"/>
+        <segue reference="Cec-79-IXe"/>
         <segue reference="qeP-fk-ieo"/>
         <segue reference="xRx-uq-3Qk"/>
     </inferredMetricsTieBreakers>
