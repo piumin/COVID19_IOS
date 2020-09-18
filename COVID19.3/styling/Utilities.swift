@@ -23,6 +23,16 @@ class Utilities {
         textfield.layer.addSublayer(bottomLine)
         
     }
+    static func styleLabel(_ label:UILabel) {
+          
+          // Create the bottom line
+          let bottomLine = CALayer()
+          bottomLine.frame = CGRect(x: 0, y: label.frame.height - 2, width: label.frame.width, height: 2)
+          bottomLine.backgroundColor = UIColor.gray.cgColor
+          // Add the line to the label
+          label.layer.addSublayer(bottomLine)
+          
+      }
     
     static func styleFilledButton(_ button:UIButton) {
         
