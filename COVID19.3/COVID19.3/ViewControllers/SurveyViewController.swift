@@ -9,15 +9,25 @@
 import UIKit
 
 class SurveyViewController: UIViewController {
-    
-@IBOutlet weak var survey1TextField: UITextField!
 
+    @IBOutlet weak var SurveyLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
                 setUpElement()
     }
       func setUpElement(){
         
-          Utilities.styleTextField(survey1TextField)
+        Utilities.styleLabel(SurveyLabel)
       }
+    
+    @IBAction func SurveyYesButton(_ sender: Any) {
+         
+        SurveyLabel.text = "Yes"
+    }
+    
+    
+    @IBAction func surveyNoButtonTapped(_ sender: Any) {
+        SurveyLabel.text = "Nope"
+    }
 }
