@@ -9,8 +9,8 @@
 import UIKit
 
 class Survey2ViewController: UIViewController {
-    
-@IBOutlet weak var survey2TextField: UITextField!
+
+    @IBOutlet weak var survey2Label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +21,16 @@ class Survey2ViewController: UIViewController {
 
     func setUpElement(){
       
-        Utilities.styleTextField(survey2TextField)
+        Utilities.styleLabel(survey2Label)
         
     }
 
+    
+    @IBAction func survey2ButtonYesTapped(_ sender: Any) {
+        survey2Label.text = "Yes"
+    }
+    
+    @IBAction func survey2ButtonnoTapped(_ sender: Any) {
+        survey2Label.text = "Nope"
+    }
 }

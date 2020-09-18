@@ -29,7 +29,7 @@ class FirstViewController: UIViewController {
         Utilities.styleFilledView(UpdateUIView)
         Utilities.styleFilledView(SurveyLabel)
         Utilities.styleFilledView(tempTextField)
-        Utilities.styleFilledView(UpdateButton)
+        Utilities.updateButton(UpdateButton)
         
      }
 }

@@ -12,6 +12,7 @@ class ProfileViewController: UIViewController {
 
 @IBOutlet weak var cameraImageView: UIImageView!
     
+    @IBOutlet weak var ProfileUpdateButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,7 @@ class ProfileViewController: UIViewController {
     func setUpElement(){
       
         Utilities.roundImageView(cameraImageView)
+        Utilities.updateButton(ProfileUpdateButton)
      
     }
 

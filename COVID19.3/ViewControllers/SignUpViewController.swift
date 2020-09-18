@@ -26,15 +26,16 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
 
         setUpElement()
+        
     }
     func setUpElement(){
         //hide the errorLabel
        S_ErrorLabel.alpha = 0
         
-        
         Utilities.styleFilledButton(signupButton)
         Utilities.styleFilledButton(AccountButton)
-    }
+            
+}
    
 /*check th fields and validate to check if the data is correct. if correct
     will return nil or else will return the error message
@@ -42,10 +43,11 @@ class SignUpViewController: UIViewController {
     func validateFields() -> String? {
         
         //check if all the fields are filled
-        if FnameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+        if  FnameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            RoleTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             LnameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             EmailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            PasswordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
+            PasswordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             
             return "Please fill all the fields."
         }
@@ -56,6 +58,14 @@ class SignUpViewController: UIViewController {
             //password is not secure enough
             return "Please make sure your Password is at least 8 characters, contains a special character and number"
         }
+        //checking the correct role
+        if(RoleTextField.text == "student" || RoleTextField.text  == "staff" || RoleTextField.text  == "other"){
+        
+                } else {
+                    S_ErrorLabel.text = "Invalid option"
+                    S_ErrorLabel.isHidden = false
+                    return "please enter the role name correctly"
+                }
         
         return nil
     }
@@ -76,8 +86,8 @@ class SignUpViewController: UIViewController {
              let email = EmailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
              let role = RoleTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
              let password = PasswordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        //create the user
         
+            //create the user
             Auth.auth().createUser(withEmail: email, password: password){(Result,err) in
                 //check for errors
                 if err != nil {
@@ -109,9 +119,8 @@ class SignUpViewController: UIViewController {
     }
    
     func transitionUpdate() {
-        let FirstViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.FirstViewController) as? FirstViewController
-        view.window?.rootViewController = FirstViewController
-        view.window?.makeKeyAndVisible()
-        
+        let SignInViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.SignInViewController) as? SignInViewController
+            view.window?.rootViewController = SignInViewController
+               view.window?.makeKeyAndVisible()
     }
 }
