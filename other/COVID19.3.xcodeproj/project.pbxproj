@@ -20,6 +20,7 @@
 		FF6AD5E22513227000BEB682 /* SafeAciton2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6AD5E12513227000BEB682 /* SafeAciton2ViewController.swift */; };
 		FF6AD5E425136B7600BEB682 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF6AD5E325136B7500BEB682 /* GoogleService-Info.plist */; };
 		FF6AD5E625139D7E00BEB682 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6AD5E525139D7E00BEB682 /* Constants.swift */; };
+		FF79E39825163C150002FD88 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79E39725163C150002FD88 /* SettingsViewController.swift */; };
 		FF7BA294250FE5ED00CBDE56 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BA293250FE5ED00CBDE56 /* Utilities.swift */; };
 		FF7BA296250FE9CF00CBDE56 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BA295250FE9CF00CBDE56 /* SignUpViewController.swift */; };
 		FFEDB68E250CE4F900590437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDB68D250CE4F900590437 /* AppDelegate.swift */; };
@@ -47,6 +48,7 @@
 		FF6AD5E12513227000BEB682 /* SafeAciton2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAciton2ViewController.swift; sourceTree = "<group>"; };
 		FF6AD5E325136B7500BEB682 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF6AD5E525139D7E00BEB682 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FF79E39725163C150002FD88 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FF7BA293250FE5ED00CBDE56 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FF7BA295250FE9CF00CBDE56 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FFEDB68A250CE4F900590437 /* COVID19.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVID19.3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +108,7 @@
 				FF6AD5E12513227000BEB682 /* SafeAciton2ViewController.swift */,
 				FF5CECF82515C5720086F1A1 /* WarningViewController.swift */,
 				FF5CECFA2515C72A0086F1A1 /* SafeViewController.swift */,
+				FF79E39725163C150002FD88 /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				FF2892092512054900EBAD03 /* survey4ViewController.swift in Sources */,
 				FF6AD5E02512F38100BEB682 /* ProfileViewController.swift in Sources */,
 				FFEDB690250CE4F900590437 /* SceneDelegate.swift in Sources */,
+				FF79E39825163C150002FD88 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
