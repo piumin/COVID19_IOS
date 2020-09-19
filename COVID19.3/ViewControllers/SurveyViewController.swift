@@ -7,27 +7,36 @@
 //
 
 import UIKit
+import FirebaseFirestore
+
+var que1 = false
+var que2 = false
+var que3 = false
+var que4 = false
 
 class SurveyViewController: UIViewController {
 
-    @IBOutlet weak var SurveyLabel: UILabel!
-    
+    @IBOutlet weak var Survey1Label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
                 setUpElement()
     }
       func setUpElement(){
         
-        Utilities.styleLabel(SurveyLabel)
+        Utilities.styleLabel(Survey1Label)
       }
     
     @IBAction func SurveyYesButton(_ sender: Any) {
          
-        SurveyLabel.text = "Yes"
+        Survey1Label.text = "Yes"
+        que1 = true
     }
     
     
     @IBAction func surveyNoButtonTapped(_ sender: Any) {
-        SurveyLabel.text = "Nope"
+        Survey1Label.text = "Nope"
+        que1 = false
     }
+    
+    
 }

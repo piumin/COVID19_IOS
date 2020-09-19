@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import FirebaseFirestore
 
 class ViewController: UIViewController {
 
@@ -19,18 +20,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var nibmmapnew: MKMapView!
     @IBOutlet weak var mapButton: UIButton!
     
+    @IBOutlet weak var InfectLabel: UILabel!
+    
     private let locationManager = CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("home did load")
         
         vwContainerhome2.layer.cornerRadius = 8.0
-        // Set initial location in NIBM
-               _ = CLLocation(latitude: 6.9063951, longitude: 79.8684273)
         
-        //self.navigationItem.leftBarButtonItem = nil
-        //self.navigationItem.hidesBackButton = true
         setUpElement()
         
+        let db = Firestore.firestore()
+        
+        db.collection("users").whereField("infected", in: [true]).getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+             self.InfectLabel.text = String(querySnapshot!.documents.count)
+            }
+        }
             }
     
     func setUpElement(){

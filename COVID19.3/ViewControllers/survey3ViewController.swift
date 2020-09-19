@@ -7,11 +7,11 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class survey3ViewController: UIViewController {
     
-    @IBOutlet weak var survey3Label: UILabel!
-    
+    @IBOutlet weak var Survey3Label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,18 +21,20 @@ class survey3ViewController: UIViewController {
 
     func setUpElement(){
       
-        Utilities.styleLabel(survey3Label)
+        Utilities.styleLabel(Survey3Label)
      
     }
 
     @IBAction func survey3ButtonYesTapped(_ sender: Any) {
         
-        survey3Label.text = "Yes"
+        Survey3Label.text = "Yes"
+        que3 = true
     }
     
     @IBAction func survey3ButtonNoTapped(_ sender: Any) {
         
-        survey3Label.text = "Nope"
+        Survey3Label.text = "Nope"
+        que3 = false
     }
     
 }
