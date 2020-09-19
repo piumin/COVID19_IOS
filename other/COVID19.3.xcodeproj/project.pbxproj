@@ -13,6 +13,8 @@
 		FF289207251202B400EBAD03 /* survey3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF289206251202B400EBAD03 /* survey3ViewController.swift */; };
 		FF2892092512054900EBAD03 /* survey4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2892082512054900EBAD03 /* survey4ViewController.swift */; };
 		FF50D76A250D01F400EE70C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF50D769250D01F400EE70C0 /* ViewController.swift */; };
+		FF5CECF92515C5720086F1A1 /* WarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5CECF82515C5720086F1A1 /* WarningViewController.swift */; };
+		FF5CECFB2515C72A0086F1A1 /* SafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5CECFA2515C72A0086F1A1 /* SafeViewController.swift */; };
 		FF5DC78E250FD3C100897336 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DC78D250FD3C100897336 /* SignInViewController.swift */; };
 		FF6AD5E02512F38100BEB682 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6AD5DF2512F38100BEB682 /* ProfileViewController.swift */; };
 		FF6AD5E22513227000BEB682 /* SafeAciton2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6AD5E12513227000BEB682 /* SafeAciton2ViewController.swift */; };
@@ -38,6 +40,8 @@
 		FF289206251202B400EBAD03 /* survey3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = survey3ViewController.swift; sourceTree = "<group>"; };
 		FF2892082512054900EBAD03 /* survey4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = survey4ViewController.swift; sourceTree = "<group>"; };
 		FF50D769250D01F400EE70C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF5CECF82515C5720086F1A1 /* WarningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningViewController.swift; sourceTree = "<group>"; };
+		FF5CECFA2515C72A0086F1A1 /* SafeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeViewController.swift; sourceTree = "<group>"; };
 		FF5DC78D250FD3C100897336 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FF6AD5DF2512F38100BEB682 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FF6AD5E12513227000BEB682 /* SafeAciton2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAciton2ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				FF2892082512054900EBAD03 /* survey4ViewController.swift */,
 				FF6AD5DF2512F38100BEB682 /* ProfileViewController.swift */,
 				FF6AD5E12513227000BEB682 /* SafeAciton2ViewController.swift */,
+				FF5CECF82515C5720086F1A1 /* WarningViewController.swift */,
+				FF5CECFA2515C72A0086F1A1 /* SafeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -269,10 +275,12 @@
 				FF7BA294250FE5ED00CBDE56 /* Utilities.swift in Sources */,
 				FF6AD5E625139D7E00BEB682 /* Constants.swift in Sources */,
 				FF2892032511EFA000EBAD03 /* SurveyViewController.swift in Sources */,
+				FF5CECFB2515C72A0086F1A1 /* SafeViewController.swift in Sources */,
 				FF5DC78E250FD3C100897336 /* SignInViewController.swift in Sources */,
 				FF6AD5E22513227000BEB682 /* SafeAciton2ViewController.swift in Sources */,
 				FF2892052511FCC500EBAD03 /* Survey2ViewController.swift in Sources */,
 				FFEDB692250CE4F900590437 /* FirstViewController.swift in Sources */,
+				FF5CECF92515C5720086F1A1 /* WarningViewController.swift in Sources */,
 				FFEDB68E250CE4F900590437 /* AppDelegate.swift in Sources */,
 				FF2892092512054900EBAD03 /* survey4ViewController.swift in Sources */,
 				FF6AD5E02512F38100BEB682 /* ProfileViewController.swift in Sources */,
