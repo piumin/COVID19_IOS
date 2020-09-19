@@ -30,11 +30,7 @@ class SignInViewController: UIViewController {
         setUpElement()
     }
     func setUpElement(){
-        //hide the errorLabel
-        //ErrorLabel.alpha = 0
         
-        //Utilities.styleTextField(S_EmailTextField)
-        //Utilities.styleTextField(S_PasswordTextField)
         Utilities.styleFilledButton(SigninButton)
         Utilities.styleFilledButton(NeedAccountButton)
     }

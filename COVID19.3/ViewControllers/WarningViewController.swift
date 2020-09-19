@@ -11,7 +11,7 @@ import UIKit
 class WarningViewController: UIViewController {
 
     @IBOutlet weak var WarningView: UIView!
-    @IBOutlet weak var WarningCloseButton: UIButton!
+    @IBOutlet weak var warningCloseButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,10 +22,8 @@ class WarningViewController: UIViewController {
     func setUpElement(){
       
         Utilities.styleFilledView(WarningView)
-        Utilities.styleFilledButton(WarningCloseButton)
+        Utilities.updateButton(warningCloseButton)
         
     }
-
-    
 
 }

@@ -37,12 +37,6 @@ class SafeAciton2ViewController: UIViewController, UIScrollViewDelegate {
         ScrollViewSafeAction2.contentSize = CGSize(width: contentWidth, height: view.frame.height/2)
     }
     
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//    }
-    
 func scrollViewDidScroll(_ scrollView: UIScrollView) {
-    pageController2.currentPage = Int(ScrollViewSafeAction2.contentOffset.x/CGFloat(414))
-    }
-
+    pageController2.currentPage = Int(ScrollViewSafeAction2.contentOffset.x/CGFloat(414))}
 }

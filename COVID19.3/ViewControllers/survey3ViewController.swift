@@ -17,7 +17,6 @@ class survey3ViewController: UIViewController {
 
         setUpElement()
     }
-    
 
     func setUpElement(){
       
@@ -36,5 +35,4 @@ class survey3ViewController: UIViewController {
         Survey3Label.text = "Nope"
         que3 = false
     }
-    
 }

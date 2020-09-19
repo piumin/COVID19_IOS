@@ -32,11 +32,8 @@ class SurveyViewController: UIViewController {
         que1 = true
     }
     
-    
     @IBAction func surveyNoButtonTapped(_ sender: Any) {
         Survey1Label.text = "Nope"
         que1 = false
     }
-    
-    
 }

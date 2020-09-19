@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import FirebaseFirestore
+import  CoreLocation
 
 class survey4ViewController: UIViewController, CLLocationManagerDelegate {
     
@@ -30,12 +31,10 @@ class survey4ViewController: UIViewController, CLLocationManagerDelegate {
         
         setUpElement()
     }
-    
 
     func setUpElement(){
       
         Utilities.styleLabel(Survey4Label)
-     
     }
 
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -72,11 +71,8 @@ class survey4ViewController: UIViewController, CLLocationManagerDelegate {
     
     func Actions(){
         var infected = false
-        //Survey4YesButton.isEnabled = false
-        //Survey4NoButton.isEnabled = false
-        
+       
         let temp = UserDefaults.standard.integer(forKey: "last_temp")
-        //let datetime = UserDefaults.standard.string(forKey: "last_time")
         
         if(que1 && que2 && que3 && que4 && temp >= 37){
             infected = true
@@ -85,7 +81,6 @@ class survey4ViewController: UIViewController, CLLocationManagerDelegate {
         } else if(que4 && temp >= 37){
             infected = true
         }
-        
     
         let id = UserDefaults.standard.string(forKey: "id")
         let db = Firestore.firestore()
@@ -108,10 +103,6 @@ class survey4ViewController: UIViewController, CLLocationManagerDelegate {
                     print("Document successfully updated")
                 }
             }
-            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "WarningCV") as UIViewController
-            self.navigationController?.pushViewController(vc, animated: true)
         }
         else {
             ref.updateData(["infected": false, "location":
@@ -124,10 +115,6 @@ class survey4ViewController: UIViewController, CLLocationManagerDelegate {
                     print("Document successfully updated")
                 }
             }
-            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "SafeCV") as UIViewController
-            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

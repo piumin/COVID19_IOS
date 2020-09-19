@@ -10,7 +10,8 @@ import UIKit
 
 class SafeViewController: UIViewController {
 
-    @IBOutlet weak var safeView: UIImageView!
+    
+    @IBOutlet weak var SafeView: UIView!
     @IBOutlet weak var SafeCloseButton: UIButton!
     
     override func viewDidLoad() {
@@ -21,10 +22,8 @@ class SafeViewController: UIViewController {
        
        func setUpElement(){
          
-           Utilities.styleFilledView(safeView)
-        Utilities.styleFilledButton(SafeCloseButton)
+        Utilities.styleFilledView(SafeView)
+        Utilities.updateButton(SafeCloseButton)
            
        }
-    
-
 }

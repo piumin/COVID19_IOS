@@ -29,16 +29,12 @@ class SignUpViewController: UIViewController {
         
     }
     func setUpElement(){
-        //hide the errorLabel
-       //S_ErrorLabel.alpha = 0
-        
+       
         Utilities.styleFilledButton(signupButton)
         Utilities.styleFilledButton(AccountButton)
             
 }
-   
 
-    
     @IBAction func signupTapped(_ sender: Any) {
         
          S_ErrorLabel.isHidden = true
