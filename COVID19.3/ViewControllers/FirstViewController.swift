@@ -51,9 +51,18 @@ class FirstViewController: UIViewController {
                    }
                }
         
+        
         setUpElement()
         
     }
+    
+//    override func viewWillAppear(_ animated: Bool){
+//        if(!UserDefaults.standard.bool(forKey: "is_logged")) {
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let vc = storyboard.instantiateViewController(withIdentifier: "SigninCV") as UIViewController
+//            self.navigationController?.pushViewController(vc, animated: true)
+//        }
+//    }
    
     func setUpElement(){
          
@@ -101,6 +110,19 @@ class FirstViewController: UIViewController {
                 self.DateLabel.text = datetime
             }
         }
+    }
+    
+    
+    @IBAction func NewsurveyButtonTapped(_ sender: UIButton) {
+         if(TempLabel.text != "00") {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "Survey1") as UIViewController
+                self.navigationController?.pushViewController(vc, animated: true)
+            } else {
+                ErrorLabel.text = "Please enter temperature first"
+                ErrorLabel.isHidden = false
+                return
+            }
     }
 }
 

@@ -35,6 +35,13 @@ class SignInViewController: UIViewController {
         Utilities.styleFilledButton(NeedAccountButton)
     }
    
+    override func viewWillAppear(_ animated: Bool){
+        if(UserDefaults.standard.bool(forKey: "is_logged")) {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "UpdateVC") as UIViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     
     @IBAction func SigninTapped(_ sender: Any) {
         
