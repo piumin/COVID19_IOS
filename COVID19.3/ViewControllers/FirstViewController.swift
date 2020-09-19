@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class FirstViewController: UIViewController {
 
@@ -15,9 +16,40 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var UpdateUIView: UIView!
     @IBOutlet weak var UpdateButton: UIButton!
     @IBOutlet weak var tempTextField: UITextField!
-  
+    @IBOutlet weak var DateLabel: UILabel!
+    @IBOutlet weak var TempLabel: UILabel!
+    
+    @IBOutlet weak var ErrorLabel: UILabel!
+    
+    let db = Firestore.firestore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let id = UserDefaults.standard.string(forKey: "id")
+
+               let ref = db.collection("users").document(id!)
+               ref.getDocument { (document, error) in
+                   if let document = document, document.exists {
+                        let last_temp = document.get("last_temp")
+                        let last_date = document.get("last_time")
+
+                        if(last_temp != nil){
+                           var str = last_temp as?  String
+                           str = str!
+                           self.TempLabel.text = str!
+                        }
+
+                        if(last_date != nil){
+                           var str = last_date as?  String
+                           str = str!
+                           self.DateLabel.text = "Last updated: " + str!
+                           self.DateLabel.isHidden = false
+                        }
+                   } else {
+                       print("Document does not exist")
+                   }
+               }
         
         setUpElement()
         
@@ -32,6 +64,44 @@ class FirstViewController: UIViewController {
         Utilities.updateButton(UpdateButton)
         
      }
+    
+    @IBAction func updateButtontapped(_ sender: Any) {
+        
+        ErrorLabel.isHidden = true
+        let temp = tempTextField.text!
+        
+        let date = Date()
+        let format = DateFormatter()
+        format.dateFormat = "MM-dd HH:mm"
+        let datetime = format.string(from: date)
+        
+        print(datetime)
+        print(temp)
+        
+        if(temp.count == 0) {
+            ErrorLabel.text = "Please enter temperature"
+            ErrorLabel.isHidden = false
+            return
+        }
+        
+        UpdateButton.isEnabled = false
+        
+        let id = UserDefaults.standard.string(forKey: "id")
+        
+        let ref = db.collection("users").document(id!)
+        ref.updateData(["last_temp": temp, "last_time": datetime]){ err in
+            if let err = err {
+                print("Error updating document: \(err)")
+                self.ErrorLabel.text = "Error occured"
+                self.ErrorLabel.isHidden = false
+            } else {
+                print("Document successfully updated")
+                self.UpdateButton.isEnabled = true
+                self.TempLabel.text = temp
+                self.DateLabel.text = datetime
+            }
+        }
+    }
 }
 
 
