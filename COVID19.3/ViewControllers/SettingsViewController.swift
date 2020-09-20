@@ -17,32 +17,33 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
-          if(UserDefaults.standard.bool(forKey: "is_logged")){
-              
-              ProfileLabel.isHidden = false
-              profileButton.isHidden = false
-              logoutButton.isHidden = false}
-      }
+           if(UserDefaults.standard.bool(forKey: "is_logged")){
+               ProfileLabel.isHidden = false
+               profileButton.isHidden = false
+               logoutButton.isHidden = false}
+       
+       }
    
 
     @IBAction func LogoutButtonTapped(_ sender: UIButton) {
-           do {
-             try Auth.auth().signOut()
-             UserDefaults.standard.set("null", forKey: "id")
-             UserDefaults.standard.set("null", forKey: "email")
-             UserDefaults.standard.set("null", forKey: "password")
-             UserDefaults.standard.set(false, forKey: "is_logged")
-             
-             ProfileLabel.isHidden = true
-             profileButton.isHidden = true
-             logoutButton.isHidden = true
-            } catch let signOutError as NSError {
-              print ("Error signing out: %@", signOutError)
-            }
-    }
+            do {
+                  try Auth.auth().signOut()
+                  UserDefaults.standard.set("null", forKey: "id")
+                  UserDefaults.standard.set("null", forKey: "email")
+                  UserDefaults.standard.set("null", forKey: "password")
+                  UserDefaults.standard.set(false, forKey: "is_logged")
+                  
+                  ProfileLabel.isHidden = true
+                  profileButton.isHidden = true
+                  logoutButton.isHidden = true
+                 } catch let signOutError as NSError {
+                   print ("Error signing out: %@", signOutError)
+                 }
+                  
+              }
+    
     
 }
