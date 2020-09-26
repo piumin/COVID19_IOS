@@ -24,6 +24,7 @@
 		FF7BA294250FE5ED00CBDE56 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BA293250FE5ED00CBDE56 /* Utilities.swift */; };
 		FF7BA296250FE9CF00CBDE56 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BA295250FE9CF00CBDE56 /* SignUpViewController.swift */; };
 		FF7BCC882517C5A400E8DAFD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BCC872517C5A400E8DAFD /* MapViewController.swift */; };
+		FFD2B2C1251DC549009BCB2D /* notifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD2B2C0251DC549009BCB2D /* notifyViewController.swift */; };
 		FFEDB68E250CE4F900590437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDB68D250CE4F900590437 /* AppDelegate.swift */; };
 		FFEDB690250CE4F900590437 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDB68F250CE4F900590437 /* SceneDelegate.swift */; };
 		FFEDB692250CE4F900590437 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDB691250CE4F900590437 /* FirstViewController.swift */; };
@@ -53,6 +54,7 @@
 		FF7BA293250FE5ED00CBDE56 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FF7BA295250FE9CF00CBDE56 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FF7BCC872517C5A400E8DAFD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FFD2B2C0251DC549009BCB2D /* notifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notifyViewController.swift; sourceTree = "<group>"; };
 		FFEDB68A250CE4F900590437 /* COVID19.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVID19.3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEDB68D250CE4F900590437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFEDB68F250CE4F900590437 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				FF5CECFA2515C72A0086F1A1 /* SafeViewController.swift */,
 				FF79E39725163C150002FD88 /* SettingsViewController.swift */,
 				FF7BCC872517C5A400E8DAFD /* MapViewController.swift */,
+				FFD2B2C0251DC549009BCB2D /* notifyViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF50D76A250D01F400EE70C0 /* ViewController.swift in Sources */,
+				FFD2B2C1251DC549009BCB2D /* notifyViewController.swift in Sources */,
 				FFEDB694250CE4F900590437 /* SecondViewController.swift in Sources */,
 				FF289207251202B400EBAD03 /* survey3ViewController.swift in Sources */,
 				FF7BA296250FE9CF00CBDE56 /* SignUpViewController.swift in Sources */,
