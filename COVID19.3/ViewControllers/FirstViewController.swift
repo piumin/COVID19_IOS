@@ -18,7 +18,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var tempTextField: UITextField!
     @IBOutlet weak var DateLabel: UILabel!
     @IBOutlet weak var TempLabel: UILabel!
-    
+    @IBOutlet weak var surveyDate: UILabel!
     @IBOutlet weak var ErrorLabel: UILabel!
     
     let db = Firestore.firestore()
@@ -26,25 +26,38 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let id = UserDefaults.standard.string(forKey: "id")
-
+         let role = UserDefaults.standard.string(forKey: "role")
+               if(role != nil){
+                   print("update role")
+                   print(role!)
+                   if(role! == "staff"){
+                       print("inside staff")
+                       notifyUIView.isHidden = false
+                   } else {
+                       print("inside non staff")
+                       notifyUIView.isHidden = true
+                   }
+               }
+               
+               let id = UserDefaults.standard.string(forKey: "id")
+               
                let ref = db.collection("users").document(id!)
                ref.getDocument { (document, error) in
                    if let document = document, document.exists {
                         let last_temp = document.get("last_temp")
                         let last_date = document.get("last_time")
-
+        
                         if(last_temp != nil){
-                           var str = last_temp as?  String
-                           str = str!
-                           self.TempLabel.text = str!
+                           let str = last_temp as?  String
+                           self.tempTextField.text = str!
                         }
-
+        
                         if(last_date != nil){
-                           var str = last_date as?  String
-                           str = str!
+                           let str = last_date as?  String
                            self.DateLabel.text = "Last updated: " + str!
+                           self.surveyDate.text = "Last updated: " + str!
                            self.DateLabel.isHidden = false
+                           self.surveyDate.isHidden = false
                         }
                    } else {
                        print("Document does not exist")
@@ -56,25 +69,41 @@ class FirstViewController: UIViewController {
         
     }
     
-//    override func viewWillAppear(_ animated: Bool){
-//        if(!UserDefaults.standard.bool(forKey: "is_logged")) {
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let vc = storyboard.instantiateViewController(withIdentifier: "SigninCV") as UIViewController
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
-//    }
-   
     func setUpElement(){
-         
-        Utilities.styleFilledView(notifyUIView)
-        Utilities.styleFilledView(UpdateUIView)
-        Utilities.styleFilledView(SurveyLabel)
-        Utilities.styleFilledView(tempTextField)
-        Utilities.updateButton(UpdateButton)
-        
-     }
+           
+          Utilities.styleFilledView(notifyUIView)
+          Utilities.styleFilledView(UpdateUIView)
+          Utilities.styleFilledView(SurveyLabel)
+          Utilities.styleFilledView(tempTextField)
+          Utilities.updateButton(UpdateButton)
+          
+       }
     
-    @IBAction func updateButtontapped(_ sender: Any) {
+    
+    override func viewWillAppear(_ animated: Bool){
+        if(!UserDefaults.standard.bool(forKey: "is_logged")) {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "signinCV") as UIViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        //notifyUIView.isHidden = true
+        let role = UserDefaults.standard.string(forKey: "role")
+        
+        if(role != nil){
+            print("update role")
+            print(role!)
+            if(role! == "staff"){
+                print("inside staff")
+                notifyUIView.isHidden = false
+            } else {
+                print("inside non staff")
+                notifyUIView.isHidden = true
+            }
+        }
+    }
+
+    
+@IBAction func updateButtontapped(_ sender: Any) {
         
         ErrorLabel.isHidden = true
         let temp = tempTextField.text!

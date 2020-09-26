@@ -59,6 +59,13 @@ class Utilities {
         buttonupdate.layer.borderWidth = 2
         buttonupdate.tintColor = UIColor.black
            }
+    static func notifyText(_ notifytext:UITextView) {
+           
+    notifytext.layer.cornerRadius = 8.0
+    notifytext.layer.borderColor = UIColor.black.cgColor
+    notifytext.layer.borderWidth = 2
+    notifytext.tintColor = UIColor.black
+       }
 
     static func styleFilledView(_ label:UIView) {
         

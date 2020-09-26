@@ -31,7 +31,7 @@ class SafeAciton2ViewController: UIViewController, UIScrollViewDelegate {
             ScrollViewSafeAction2.addSubview(imageView)
             
             contentWidth += view.frame.width
-            imageView.frame = CGRect(x: xCoordinate, y: (view.frame.height/300), width: 385, height: 750)
+            imageView.frame = CGRect(x: xCoordinate, y: (view.frame.height/300), width: 400, height: 750)
         }
         
         ScrollViewSafeAction2.contentSize = CGSize(width: contentWidth, height: view.frame.height/2)

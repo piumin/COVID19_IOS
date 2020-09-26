@@ -64,7 +64,19 @@ override func viewWillAppear(_ animated: Bool){
                 return
             }
             
-          let id = authResult?.user.uid
+                   let id = authResult?.user.uid
+          let db = Firestore.firestore()
+            
+            db.collection("users").document(id!).getDocument(){(document, err) in
+                if let err = err {
+                     print("Error getting documents: \(err)")
+                } else {
+                    print("sign in role")
+                    print(document!.get("role")!)
+                    UserDefaults.standard.set(document!.get("role")!, forKey: "role")
+                }
+                
+            }
             
           UserDefaults.standard.set(id!, forKey: "id")
           UserDefaults.standard.set(_email, forKey: "email")
